@@ -66,7 +66,7 @@ def shout(a_string):
     or in any of the million places that google will give you.
     "python make a string uppercase" is a good starting search query.
     """
-    the_answer = upper(a_string)
+    the_answer = a_string.upper()
 
     return the_answer
 
