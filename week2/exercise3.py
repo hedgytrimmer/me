@@ -59,7 +59,7 @@ def loops_1c(number_of_items=5, symbol="#"):
     """
     list = []
     for i in range(0,number_of_items):
-        list.append("#")
+        list.append(str(symbol))
     return list
 
 
