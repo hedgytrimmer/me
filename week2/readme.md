@@ -71,4 +71,9 @@ Exercise3
         across range 10, the temporary variable was appended to list1
         then list1 was appended to list2 across range 10
     loops_5
-        
+        I was really stuck on this, until I remembered list comprehension is a thing.
+        I had worked out how to build the contents of the coordinates, but not how to build the list of lists,similar problem to loops_3
+        How I did this function was to create a long list of the contents of the required list.
+        Then, I used list comprehension to extract the 5 values of each row
+        the list comprehension line puts 5 values of coordinates1 into a list and adds that list to coordinates2, the range outputs values from 0 to the length of coordinates1, in jumps of 5. (ie. 5,10,15..) to create the 10 rows
+
