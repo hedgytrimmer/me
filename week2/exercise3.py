@@ -141,7 +141,7 @@ def loops_4():
     list1 = []
     list2 = []
     for i in range(10):
-        list1.append(i)
+        list1.append(str(i))
     for x in range(10):
         list2.append(list1)
     return list2
