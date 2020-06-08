@@ -65,6 +65,8 @@ Exercise3
         I created an empty list and then appended the list with a list of 10 of the temporary variable in a for loop across range(10)
         This worked, however it did not cast it as a string
         I solved this by creating a variable x to cast and then appending the list with 10 versions of x
+
+        EDIT: Yeah this would be much easier with list comprehension, if I'm bothered I'll fix it
     loops_4
         This was easier than loops_3.
         2 empty lists were created.
@@ -76,4 +78,18 @@ Exercise3
         How I did this function was to create a long list of the contents of the required list.
         Then, I used list comprehension to extract the 5 values of each row
         the list comprehension line puts 5 values of coordinates1 into a list and adds that list to coordinates2, the range outputs values from 0 to the length of coordinates1, in jumps of 5. (ie. 5,10,15..) to create the 10 rows
-
+    loops_6
+        I had to play around with this one a bit
+        I managed to get the rough code from the first go, but it was a reverse wedge.
+        I just had to play around with line 203 to get the right order. It basically reads "Output every entry in list1 before i+1" across a range of the length of list 1 + 1
+        I also forgot to make the numbers strings, having just listed them as integers. I used list comprehension easily to build the list as strings which was pretty neat. It's a very useful tool I see.
+    loops_7
+        Took a little while but we got there, needed a lot of debugging here.
+        Method:
+        Create a list of 9 gaps
+        Add that list 5 times to another list
+        Across the range of 0-5 with temp variable i, the star for that row is between 4-i and 5+i
+        This for loop continues for each row.
+        Row two, the stars are between 2 and 7, or 4-2 and 5+2
+        the loop replaces a star inbetween these indices in the pyramid list
+        
