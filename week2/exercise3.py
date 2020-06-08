@@ -180,6 +180,7 @@ def loops_5():
     list7 = []
     list8 = []
     list9 = []
+    list10 = []
     for j in range(5):
         a = "i" + str(0) + ", " + "j" + str(j)
         list1.append([a])
@@ -192,18 +193,18 @@ def loops_5():
         e = "i" + str(4) + ", " + "j" + str(j)
         list5.append([e])
         f = "i" + str(5) + ", " + "j" + str(j)
-        list5.append([f])
+        list6.append([f])
         g = "i" + str(6) + ", " + "j" + str(j)
-        list6.append([g])
+        list7.append([g])
         h = "i" + str(7) + ", " + "j" + str(j)
-        list7.append([h])
+        list8.append([h])
         l = "i" + str(8) + ", " + "j" + str(j)
-        list8.append([l])
+        list9.append([l])
         t = "i" + str(9) + ", " + "j" + str(j)
-        list1.append([t])
+        list10.append([t])
 
-    list10 = [list1,list2,list3,list4,list5,list6,list7,list8,list9]
-    return list10
+    list11 = [list1,list2,list3,list4,list5,list6,list7,list8,list9]
+    return list11
 
 
 
