@@ -174,7 +174,7 @@ def loops_5():
     coordinates1 = []
     for i in range(10):
         for j in range(5):
-            coordinates1.append("(i" + str(i) + ", " "j" + str(j) + '), ')
+            coordinates1.append("(i" + str(i) + ", " "j" + str(j) + ') ')
     coordinates2 = [coordinates1[i:i+5] for i in range(0,len(coordinates1), 5)]
     return coordinates2
 
