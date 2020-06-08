@@ -231,7 +231,7 @@ def loops_7():
     gap = " "
     #list1 = [] - Testing
     #list2 = [] - Testing
-    #start = [" " for i in range(9)] Using this to set up the pyramid did not work
+    #emptyrow = [" " for i in range(9)] Using this to set up the pyramid did not work
     pyramid = [[gap for n in range(9)] for i in range(5)]
     for i in range(0,5):
         start = 4 - i
