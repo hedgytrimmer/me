@@ -32,11 +32,42 @@ Exercise0
 
 I tried to push ahead, then realised I should probably just wait till next class. I wonder if anyone will read this. Back to Codecademy I go!
 
+EDIT: Some guy pushed ahead so I did too, I realise exercise 1 is not tested and for class. Onto exercise2
 Exercise1
 
 
 
 Exercise2
-    
+    This was a good challenge, a lot of the debugging was changing similar characters, as was alluded to in Week 1
+    Examples include: use of different brackets, missing commas in lists
+    I was somewhat stumped on the "return alphabet" error, however I just tried removing the index and it worked. This makes sense as the function had already drawn in the index.
 
+Exercise3
+    is_odd
+        I used a simple if/else statement and the modulo operator to complete this task.
+        an even number is divisible by 2, so the modulo must return 0.
+        Otherwise, the number is false
+    fix_it
+        I merely used if statements, however else or elif could be used in combination with this
+        "AND" was used to combine the different arms, meaning both values had to be true to pass the test. 
+        "or" was used to combined the two no problem results, which completed the challenge of only using 3 return statements.
+    loops_1a
+        This uses a simple for loop across a range from 0-10 (really 1-10) to add to a star to an empty list
+        It returns the list
+    loops 1c
+        This uses a similar process to the 1a function, however the range is from zero to the input number
+    loops_2
+        Create 2 empty lists
+        In one for loop across range 1-10, append "*" to list1
+        In a second for loop across range 1-10, append list2 with list1
+    loops_3
+        This one stumped me for a bit, I was stuck on how to create multiple lists of 10 numbers.
+        I created an empty list and then appended the list with a list of 10 of the temporary variable in a for loop across range(10)
+        This worked, however it did not cast it as a string
+        I solved this by creating a variable x to cast and then appending the list with 10 versions of x
+    loops_4
+        This was easier than loops_3.
+        2 empty lists were created.
+        across range 10, the temporary variable was appended to list1
+        then list1 was appended to list2 across range 10
     

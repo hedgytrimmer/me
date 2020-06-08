@@ -7,7 +7,10 @@ def is_odd(a_number):
 
     Look into modulo division using the '%' operator as one way of doing this.
     """
-    return None
+    if a_number % 2 == 0:
+        return False
+    else:
+        return True
 
 
 def fix_it(moves=True, should_move=True):
@@ -25,7 +28,13 @@ def fix_it(moves=True, should_move=True):
     Most people write this function with 4 return statements. 
     As an extra challenge, see if you can get that down to three.
     """
-    return None
+    if moves == True and should_move == True or moves == False and should_move == False:
+        return "No Problem"
+    if moves == True and should_move == False:
+        return "Duct Tape"
+    if moves == False and should_move == True:
+        return "WD-40"
+
 
 
 def loops_1a():
@@ -35,7 +44,10 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    return None
+    list = []
+    for i in range(0,10):
+        list.append("*")
+    return list
 
 
 def loops_1c(number_of_items=5, symbol="#"):
@@ -45,7 +57,10 @@ def loops_1c(number_of_items=5, symbol="#"):
     string with exacly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
     """
-    return None
+    list = []
+    for i in range(0,number_of_items):
+        list.append("#")
+    return list
 
 
 def loops_2():
@@ -66,7 +81,13 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    return None
+    list1 = []
+    list2 = []
+    for i in range(0,10):
+        list1.append("*")
+    for i in range(0,10):
+        list2.append(list1)
+    return list2
 
 
 def loops_3():
@@ -90,7 +111,14 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    return None
+    list1 = []
+    for i in range(10):
+        x = str(i)
+        list1.append([x,x,x,x,x,x,x,x,x,x])
+    return list1
+            
+
+
 
 
 def loops_4():
@@ -110,7 +138,13 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    return None
+    list1 = []
+    list2 = []
+    for i in range(10):
+        list1.append(i)
+    for x in range(10):
+        list2.append(list1)
+    return list2
 
 
 def loops_5():
@@ -137,7 +171,12 @@ def loops_5():
         "There are {} green bottles".format(8)
     you'll come to see the pros and cons of each over time.
     """
+    list1 = []
+    for i in range(10):
+        for x in range(10):
+            list1.append
     return None
+
 
 
 def loops_6():
