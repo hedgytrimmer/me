@@ -172,10 +172,38 @@ def loops_5():
     you'll come to see the pros and cons of each over time.
     """
     list1 = []
-    for i in range(10):
-        for x in range(10):
-            list1.append
-    return None
+    list2 = []
+    list3 = []
+    list4 = []
+    list5 = []
+    list6 = []
+    list7 = []
+    list8 = []
+    list9 = []
+    for j in range(5):
+        a = "i" + str(0) + ", " + "j" + str(j)
+        list1.append([a])
+        b = "i" + str(1) + ", " + "j" + str(j)
+        list2.append([b])
+        c = "i" + str(2) + ", " + "j" + str(j)
+        list3.append([c])
+        d = "i" + str(3) + ", " + "j" + str(j)
+        list4.append([d])
+        e = "i" + str(4) + ", " + "j" + str(j)
+        list5.append([e])
+        f = "i" + str(5) + ", " + "j" + str(j)
+        list5.append([f])
+        g = "i" + str(6) + ", " + "j" + str(j)
+        list6.append([g])
+        h = "i" + str(7) + ", " + "j" + str(j)
+        list7.append([h])
+        l = "i" + str(8) + ", " + "j" + str(j)
+        list8.append([l])
+        t = "i" + str(9) + ", " + "j" + str(j)
+        list1.append([t])
+
+    list10 = [list1,list2,list3,list4,list5,list6,list7,list8,list9]
+    return list10
 
 
 
