@@ -198,7 +198,12 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    return None
+    list1 = [0,1,2,3,4,5,6,7,8,9]
+    for x in range(len(list1)+1):
+        list2 = [list1[:i+1] for i in range(0,x)]
+    #list3 = [list2[i] for i in range(len(list2))]
+    return list2
+
 
 
 def loops_7():
