@@ -92,4 +92,4 @@ Exercise3
         This for loop continues for each row.
         Row two, the stars are between 2 and 7, or 4-2 and 5+2
         the loop replaces a star inbetween these indices in the pyramid list
-        I realised that I had setup 
+        I learnt how nested lists actually work and how to reference a value within a nested list
