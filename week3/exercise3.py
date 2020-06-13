@@ -25,8 +25,72 @@ def advancedGuessingGame():
     Remember to think modular. Try to keep your functions small and single
     purpose if you can!
     """
+    checkLower = False
+    checkUpper = False
 
+    print("\nWelcome to the guessing game!")
+    print("A number between _ and _ ?")
+    while checkLower == False:
+      lowerBound = input("Enter a lower bound: ")
+      try:
+        int(lowerBound)
+        checkLower = True
+      except ValueError: 
+          print("Enter a Number this time! ")
+      except TypeError:
+          print("Enter a Number this time! ")
+      if isinstance(lowerBound, str) == True:
+        checkLower = False
+      
+    while checkUpper == False:
+      upperBound = input("Enter an upper bound: ")
+      try:
+        int(upperBound)
+        checkUpper = True
+      except ValueError: 
+          print("Enter a Number this time! ")
+      except TypeError:
+          print("Enter a Number this time! ")
+      if upperBound == lowerBound:
+        print("The two numbers must be different!")
+        checkUpper = False
+      if isinstance(upperBound, str) == True:
+        checkUpper = False
+    
+    print("OK then, a number between " + str(lowerBound) + " and " + str(upperBound) + "!")
+    lowerBound = int(lowerBound)
+    upperBound = int(upperBound)
+
+    actualNumber = 0
+
+    if lowerBound < upperBound:
+      actualNumber = random.randint(lowerBound, upperBound)
+    if upperBound < lowerBound:
+      actualNumber = random.randint(upperBound, lowerBound)
+
+    guessed = False
+    checkGuess = False
+
+    while not guessed:
+        guessedNumber = input("Guess a number: ")
+        try:
+          int(guessedNumber)
+          checkGuess = True
+        except ValueError:
+          guessedNumber = input("A number this time!")
+        except TypeError:
+          guessedNumber = input("A number this time!")
+        print("You guessed {},".format(guessedNumber),)
+        if int(guessedNumber) == actualNumber:
+            print("You got it!! It was {}".format(actualNumber))
+            guessed = True
+        elif guessedNumber < actualNumber:
+            print("Too small, try again :'(")
+        else:
+            print("Too big, try again :'(")
     return "You got it!"
+
+   
     # the tests are looking for the exact string "You got it!". Don't modify that!
 
 
