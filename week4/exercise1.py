@@ -151,7 +151,7 @@ def diarist():
         if "M10 P1" in i:
             number += 1
     #number = lasers.count("M10 P1")
-    lst = open("lasers.pew", "w")
+    lst = open("week4\lasers.pew", "w")
     lst.write(str(number))
     lst.close()
 
