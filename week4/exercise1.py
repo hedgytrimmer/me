@@ -153,7 +153,7 @@ def diarist():
     #number = lasers.count("M10 P1")
     lst = open("lasers.pew", "w")
     lst.write(str(number))
-    lst.close
+    lst.close()
 
 
 
