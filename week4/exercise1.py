@@ -36,7 +36,13 @@ def get_some_details():
     json_data = open(LOCAL + "/lazyduck.json").read()
 
     data = json.loads(json_data)
-    return {"lastName": None, "password": None, "postcodePlusID": None}
+    last = data["results"][0]["name"]["last"]
+    password = data["results"][0]["login"]["password"]
+    postcode = data["results"][0]["location"]["postcode"]
+    idv = data["results"][0]["id"]["value"]
+
+
+    return {"lastName": last, "password": password, "postcodePlusID": int(postcode) + int(idv)}
 
 
 def wordy_pyramid():
@@ -72,8 +78,19 @@ def wordy_pyramid():
         ]
         TIP: to add an argument to a URL, use: ?argName=argVal e.g. &wordlength=
         """
-        pass
-
+    lst = []
+    path = "https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength={len}"
+    for i in range(3, 20, 3):
+        url = path.format(len=i)
+        x = requests.get(url)
+        word = x.content
+        lst.append(word)
+    for i in range(19,2,-2):
+        url = path.format(len=i)
+        x = requests.get(url)
+        word = x.content
+        lst.append(word)
+    return lst
 
     def pokedex(low=1, high=5):
         """ Return the name, height and weight of the tallest pokemon in the range low to high.
