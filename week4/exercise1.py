@@ -80,16 +80,18 @@ def wordy_pyramid():
         """
     lst = []
     path = "https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength={len}"
-    for i in range(3, 20, 3):
+    for i in range(3, 20, 2):
         url = path.format(len=i)
         x = requests.get(url)
         word = x.content
-        lst.append(word)
-    for i in range(19,2,-2):
+        word2 = word.decode("utf-8")
+        lst.append(str(word2))
+    for i in range(20,2,-2):
         url = path.format(len=i)
         x = requests.get(url)
         word = x.content
-        lst.append(word)
+        word2 = word.decode("utf-8")
+        lst.append(str(word2))
     return lst
 
     def pokedex(low=1, high=5):
